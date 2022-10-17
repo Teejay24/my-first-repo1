@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+   
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="humanimages/1logo.png" width="100px">
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row container-fluid">
+        <div class="col-sm-12 md-12 lg-12">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 600px;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" style="height: 600px;">
+                    <div class="carousel-item active" style="height: 600px;" data-bs-interval="1000">
+                        <img src="humanimages/m1.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 600px;" data-bs-interval="1000">
+                        <img src="humanimages/cute.webp" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 600px;" data-bs-interval="1000">
+                        <img src="humanimages/m2.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height: 600px;" data-bs-interval="1000">
+                        <img src="humanimages/Asaba-airport.webp" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fourth slide label</h5>
+                            <p>Some representative placeholder content for the Fourth slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+   
+  
+
+
+    <div class=" p-3 alert alert-success">
+        Registration Sucessful
+    </div>
+
+    <div class=" p-3 alert alert-warning alert-dismissible fade show role-alert">
+        These details have already been used
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div id="liveAlertPlaceholder"></div>
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+            so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+
+
+
+    <div class="col-md-4 p-3 m-5 border border-dark ">
+        <h1>ICT-YEP Registration Form</h1>
+        <div>
+            <form class="was-validated">
+
+                <div class="mb-3  ">
+
+                    <label for="Name" Value="Name" class="form-label">Full Name</label>
+
+                    <input type="text" id="Name" class="form-control" required value="" placeholder="Enter Full Name">
+                    <div class="valid-feedback">
+                        Looks Good
+                    </div>
+                    <div class="invalid-feedback">
+                        Invalid-feedback
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Username" Value="Name" class="form-label">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-text">User</span>
+                        <input type="text" class="form-control" name="" id="">
+                        <span class="input-group-text">@</span>
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <label for="Password" Value="Password" class="form-label">Enter Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter Password">
+                    <div id="passwordHelpBlock" class="form-text">
+                        Your Password must be 8-20 characters long containing letters and numbers
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="Email" Value="Email" class="form-label">Enter Email</label>
+                    <input type="Email" id="Email" class="form-control" required value=""
+                        placeholder="Enter Your Email Address">
+                    <div class="valid-feedback">
+                        Looks Good
+                    </div>
+                    <div class="invalid-feedback">
+                        Invalid-feedback
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="" class="form-control" placeholder="Enter DOB" id="DOB">
+                    <label for="DOB"> Enter DOB</label>
+                </div>
+                <div class="mb-3">
+                    <label for="State of Origin" class="form-label"> State of Origin</label>
+                    <select name="" id="State" class="form-select">
+                        <option value=""> Abia</option>
+                        <option value=""> Adamawa</option>
+                        <option value=""> Akwaibom</option>
+                        <option value=""> Anambra</option>
+                        <option value="" selected> Delta</option>
+                        <option value=""> Bauchi</option>
+                    </select>
+                </div>
+                <label mt-3>Gender </label>
+                <div class="form-check">
+
+                    <input class="form-check-input" type="checkbox" value="" id="Male" name="Gender">
+                    <label class="form-check-label" for=" Male">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check ">
+
+                    <input class="form-check-input" type="checkbox" id="Female" name="Gender">
+                    <label class="form-check-label" for="Female">
+                        Female
+                    </label>
+                </div>
+
+                <label mt-3>Educational Qualification</label>
+                <div class="form-check form-check-inline">
+
+                    <input class="form-check-input" type="radio" value="" id="OND" name="Edu qualification">
+                    <label class="form-check-label" for="OND">
+                        OND
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+
+                    <input class="form-check-input" type="radio" value="" id="BSC" name="Edu qualification">
+                    <label class="form-check-label" for="BSC">
+                        BSC
+                    </label>
+                </div>
+                <div class="form-check form-check-inline ">
+
+                    <input class="form-check-input" type="radio" value="" id="MSC" name="Edu qualification">
+                    <label class="form-check-label" for="MSC">
+                        MSC
+                    </label>
+                </div>
+                <div class="form-check form-switch ">
+
+                    <input class="form-check-input" type="checkbox" role="switch" id="BSC" name="Edu qualification">
+                    <label class="form-check-label" for="BSC">
+                        BSC
+                    </label>
+                </div>
+        </div>
+        <div class="form-check form-switch ">
+
+            <input class="form-check-input" type="checkbox" role="switch" id="MSC" name="Edu qualification">
+            <label class="form-check-label" for="MSC">
+                MSC
+            </label>
+        </div>
+
+        <a href="" class="btn btn-outline-secondary btn-lg disabled w-100">Go Back</a>
+
+        <button class=" btn btn-outline-primary btn-lg w-100"> Submit</button>
+        </form>
+
+    </div>
+
+    <div class="p-3">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Question 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>What are the Requirements for ICT-YEP</strong> The Requirements for the ICT-YEP are as
+                        follows; you have to be between 18-40years of age, Must be an Indigene of Delta State with Local
+                        governmenrt of Origin Certificate as proof, Must be an Umemployed Graduate and must be willining
+                        to get an accomodation in Asaba during the course of the programme
+                        <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6 card shadow-lg">
+            <div class="p-4 mx-3 my-3 border border-primary">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deserunt, ducimus, in
+                    porro
+                    doloribus nostrum tenetur tempora odit iusto doloremque possimus atque. Animi iste
+                    modi
+                    incidunt! Molestias quibusdam excepturi ipsam.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6 card shadow-lg">
+            <div class="p-4 mx-3 my-3 border border-primary">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deserunt, ducimus, in
+                    porro
+                    doloribus nostrum tenetur tempora odit iusto doloremque possimus atque. Animi iste
+                    modi
+                    incidunt! Molestias quibusdam excepturi ipsam.
+                </p>
+            </div>
+        </div>
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
